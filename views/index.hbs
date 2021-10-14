@@ -75,87 +75,24 @@
 
     <div id="border" class="picture grid">
       <h2>Cakes by Flavor</h2>
+      {{#each Product}}
+      
       <div class="row">
+        {{#each row }}
         <div class="col">
+          <form action="/cake/{{name}}">
+          <button type="submit">
           <a href="chocolate.html"> <img src="https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/1-Chocolate-Cakes.jpg" alt=""></img></a>
 
-          <h3>Chocolate Cakes</h3>
-
+          <h3 >{{name}}</h3>
+          </button>
+          </form>
         </div>
-
-        <div class="col">
-          <a href="redvelvet.html"><img src="https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/2-Truffle-Cakes.jpg" alt=""></img></a>
-          <h3>Red Velvet Cakes</h3>
-
-        </div>
-        <div class="col">
-          <img src="https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/3-Truffle-Cakes.jpg" alt="">
-          <h3>Vanilla Cakes</h3>
-
-        </div>
-
-        <div class="col">
-          <a href="butterscotch.html"><img src="https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/4-Butterscotch-Cakes.jpg" alt=""></img></a>
-          <h3>Butterscotch Cakes</h3>
-
-
-        </div>
-
+        {{/each}}
       </div>
+      
+      {{/each}}
 
-      <div class="row">
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/6-Fresh-Fruit-Cakes.jpg" alt="">
-          <h3>Fresh Fruit Cakes</h3>
-
-        </div>
-
-        <div class="col">
-          <img src="https://imgcdn.floweraura.com/kitkat-gems-cake-9979920ca.jpg?tr=w-264,dpr-1.5,q-70 alt="">
-          <h3>kitkat Cakes</h3>
-
-        </div>
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/7-Pineapple-Cakes.jpg" alt="">
-          <h3>Pineapple Cakes</h3>
-
-        </div>
-
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/5-Black-Forest-Cakes.jpg" alt="">
-          <h3>Black Forest Cakes</h3>
-
-
-        </div>
-
-      </div>
-
-      <div class="row">
-        <div class="col">
-          <img src="https://imgcdn.floweraura.com/chocolicious-coffee-cake-a.jpg?tr=w-264,dpr-1.5,q-70" alt="">
-          <h3>Coffee Cakes</h3>
-
-        </div>
-
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/10-Oreo-Cakes.jpg" alt="">
-          <h3>Oreo Cakes</h3>
-
-        </div>
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/9-Strawberry-Cakes.jpg" alt="">
-          <h3> Strawberry Cakes</h3>
-
-        </div>
-
-        <div class="col">
-          <img src="https://i1.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/11-Blueberry-Cakes.jpg" alt="">
-          <h3>Blueberry Cakes</h3>
-
-
-        </div>
-
-      </div>
         <!-- <div class=" grid box"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/04LDEYRW59.jpg" alt=""></div>
         <div class=" grid box"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/90V03Q5Y60.jpg" alt=""></div>
         <div class=" grid box"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/O83SF2RB6D.jpg" alt=""></div>

@@ -5,6 +5,15 @@ const port = 3000
 var con1 = require("./src/db/conn");
 const User =  require("./src/db/user");
 
+var Product = require("./js/products");
+
+
+var Strawberry = require("./js/strawberry");
+var Chockolate = require("./js/chocklate");
+
+
+console.log(Product,Strawberry) ;
+
 app.use(express.static(__dirname))
 app.use(express.static(__dirname+ "/views"))
 app.use(express.json() )
@@ -14,13 +23,35 @@ app.set("views engine","hbs")
 
 app.get('/', (req, res) =>{
 
-    res.render('index.hbs')
+    res.render('index.hbs',{Product})
 })
 app.get('/signin', (req, res) =>{
 
     res.render('signin.hbs')
 })
+app.get('/cake/:flavor', (req, res) =>{
 
+	console.log(req.params.flavor );
+
+	var variat = "" ;
+	var na = ""
+	switch(req.params.flavor) {
+		case 'chocolate_cakes':
+		  variat = Chockolate
+		  na = "Chockolate "
+		  break;
+		case "red_velvet_cakes":
+		  variat = Strawberry
+		  na = "Strawberry "
+		  break;
+		default:
+			variat = Strawberry
+			na = "Strawberry "
+	  }
+
+    res.render('strawberry.hbs',{ name1 : na 
+								 	,variat})
+})
 app.post('/create', async (req, res) =>{
 
     try {

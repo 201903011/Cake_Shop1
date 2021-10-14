@@ -32,7 +32,7 @@ var userSchema = new mongoose.Schema({
 });
 
 
-const User  =  mongoose.model('user', userSchema);
+const User  =  mongoose.model(' ', userSchema);
 
 console.log(User,userSchema.obj) ;
 
