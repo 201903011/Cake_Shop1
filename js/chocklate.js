@@ -1,19 +1,35 @@
 const row1 = [
 
-{  link : "https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/1-Chocolate-Cakes.jpg", 
- name : "Chockolate" },
+{  link : "/images/choco1.jpg", 
+ name : "Buttercream Chocolate Swirl Cakes" },
 
- {  link : "https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/1-Chocolate-Cakes.jpg", 
- name : "Chockolate" },
+ {  link : "/images/choco2.jpg", 
+ name : "Chocolate Pinata Cake" },
 
- {  link : "https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/1-Chocolate-Cakes.jpg", 
- name : "Chockolate" },
+ {  link : "/images/choco3.jpg", 
+ name : "Glazing Chocolate Beauty" },
 
- {  link : "https://i7.fnp.com/assets/images/custom/cake-2020/cakes-by-flavor/1-Chocolate-Cakes.jpg", 
- name : "Chockolate" },
+ {  link : "/images/choco4.jpg", 
+ name : "Sinful Chocolate Truffle" },
 
 ]
-const Chockolate = [{row : row1 },{row : row1}] ;
+
+const row2 = [
+
+    {  link : "/images/choco5.jpg", 
+     name : "Choco Dripping Snowy Cake" },
+    
+     {  link : "/images/choco6.jpg", 
+     name : "Ball of Chocolaty Passion" },
+    
+     {  link : "/images/choco7.jpg", 
+     name : "Choco Pull Me Up Cake" },
+    
+     {  link : "/images/choco8.jpg", 
+     name : "Eggless Choco Vanilla Cake" },
+    
+    ]
+const Chockolate = [{row : row1 },{row : row2}] ;
 
 
 module.exports = Chockolate ;

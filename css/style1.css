@@ -232,7 +232,7 @@ h2{
 .lprice{
   font-weight: bold;
 }
-button{
+.btn{
   display: inline-block;
    text-decoration: none;
    color: #ffff;
@@ -247,7 +247,7 @@ button{
    left: 9%;
    text-align: center;
 }
-button:hover{
+.btn:hover{
    border: 1px solid #900603;
    transition: 0.3s;
    background: #f1211e;
@@ -310,7 +310,7 @@ button:hover{
   color: white;
 }
 
-.cart{
+/* .cart{
   width: 500px;
   text-align: center;
   border: 1px solid black;
@@ -320,7 +320,7 @@ button:hover{
 
 .cartImg > img{
   width: 200px;
-}
+} */
 /* .dropdown{
   position: relative;
   width: 80px;

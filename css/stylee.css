@@ -209,6 +209,9 @@ header{
     transition: 0.8s
 
 }
+.but{
+    border: none;
+}
 
 .picture grid{
   display: grid;
