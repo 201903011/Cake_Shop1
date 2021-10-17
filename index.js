@@ -150,7 +150,11 @@ app.get('/showcart', async (req, res) =>{
 		console.log(filter) 
 		cart1 = await Cart.find()
 		console.log(cart1)
-		res.render('cart.hbs',{cart : cart1,total : 100})
+		var tot = 0 ;
+		for (let i = 0; i < cart1.length; i++) {
+		 	tot = tot + cart1[i].price ;
+		}
+		res.render('cart.hbs',{cart : cart1,total : tot})
 
 	} catch (error) {
 		console.log(error)
