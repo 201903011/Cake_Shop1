@@ -37,36 +37,35 @@
       </div>
       <div class="cart-items">
       </div>
-      <div class="cart-total">
-          <strong class="cart-total-title">Total</strong>
-          <span class="cart-total-price">$0</span>
-      </div>
+     
       <!-- <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button> -->
   </section>
-  <!-- <div class="small-container cart page">
+    {{#each cart}}
     <table>
      <tr>
         <th>Product</th>
-        <th>Product</th>
-        <th>Product</th>
+        <th>Quantity</th>
+        
       </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="" alt="">
+      <tr >
+        <td >
+          <div class="cart-info" style="padding:10px; margin:25px; background-color : rgb(227,227,227)">
+            <img src="{{link}}" style="width: 100px;" alt="">
             <div>
-              <p>Red Cake</p>
-              <small>Price: $50.00</small>
+              <p>{{name}}</p>
+              <small>Price: Rs{{price}}</small>
               <a href="">Remove</a>
 
             </div>
-        <td>Product Name</td>
-        <td><input type="number" value="1"></td>
-        <td>$50</td>
+        <td>{{quantity}}</td>
       </tr>
-    </table> -->
+    </table>
+    {{/each}}
 
-
-  <!-- </div> -->
+    <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">{{total}}</span>
+      </div>
+  
 </body>
 </html>
